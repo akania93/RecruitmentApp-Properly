@@ -1,0 +1,83 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "ignoreFiles": ["node_modules/**/*.css", "target/**/*.css"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+
+    "color-hex-case": "lower",
+    "indentation": 2,
+    "max-empty-lines": 1,
+    "max-line-length": 150,
+    "color-no-invalid-hex": true,
+
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["ng-deep"]
+      }
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": ["custom-elements"],
+        "ignoreTypes": ["selectbox"]
+      }
+    ],
+
+    "font-family-name-quotes": "always-unless-keyword",
+
+    "number-leading-zero": "always",
+    "number-no-trailing-zeros": true,
+
+    "string-no-newline": true,
+    "string-quotes": "single",
+
+    "length-zero-no-unit": true,
+
+    "time-min-milliseconds": 0,
+
+    "unit-case": "lower",
+    "unit-no-unknown": true,
+
+    "value-keyword-case": "lower",
+
+    "value-list-comma-newline-after": "always-multi-line",
+
+    "property-case": "lower",
+    "property-no-unknown": true,
+    "property-no-vendor-prefix": true,
+
+    "declaration-bang-space-after": "never",
+    "declaration-bang-space-before": "always",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "declaration-no-important": null,
+
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": ["consecutive-duplicates-with-different-values"]
+      }
+    ],
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-semicolon-newline-before": "never-multi-line",
+    "declaration-block-semicolon-space-after": "never-single-line",
+    "declaration-block-semicolon-space-before": "never",
+    "declaration-block-trailing-semicolon": "always",
+
+    "block-closing-brace-empty-line-before": "never",
+    "block-closing-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always",
+    "block-no-empty": true,
+    "block-opening-brace-newline-after": "always-multi-line",
+    "block-opening-brace-newline-before": "never-single-line",
+    "block-opening-brace-space-after": "never-single-line",
+    "block-opening-brace-space-before": "always",
+
+    "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-duplicate-selectors": null
+  }
+}

@@ -1,0 +1,119 @@
+@import './colors.scss';
+
+$font_primary: 'Montserrat, sans-serif';
+
+html {
+  font-size: 16px;
+}
+
+.row + .row {
+  margin-top: 1rem;
+}
+
+// Css for bootstrap .col- container to remove paddings.
+.no-gutter {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  [class*='col-'] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  [class='col'] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+// #region Top Menu
+
+ngx-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.top-menu-container {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.top-menu-container.logo-container {
+  align-items: center;
+  display: flex;
+  width: auto;
+
+  .sidebar-toggle {
+    padding-right: 1.25rem;
+    text-decoration: none;
+
+    // w zależności czy używamy ikonek z nb czy primeng
+    nb-icon {
+      font-size: 1.75rem;
+    }
+
+    i[class^='icon-'] {
+      font-size: 24px;
+      line-height: 1.5;
+      color: $color_primary;
+    }
+  }
+
+  .logo {
+    padding: 0 1.25rem 0 0;
+    text-decoration: none;
+    white-space: nowrap;
+    border-left: 1px solid $color_gray_light_1;
+  }
+  .logo img {
+    max-height: 65px;
+  }
+}
+
+.top-menu-container-menu {
+  width: 50%;
+
+  @mixin menu-underline-pseudoelement($color) {
+    content: '';
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 20%;
+    border-bottom: 3px solid $color;
+  }
+
+  nb-menu.top-menu .menu-items {
+    display: flex;
+  }
+  nb-menu.top-menu > .menu-items > .menu-item a {
+    background: #fff;
+    color: $font_color_primary;
+    padding: 8px 16px;
+    position: relative;
+
+    &:hover {
+      background: #fff;
+      color: $hover_color;
+
+      &:after {
+        @include menu-underline-pseudoelement($hover_color);
+      }
+    }
+
+    &.active {
+      font-weight: 700 !important;
+      background: #fff;
+      color: $font_color_blue;
+
+      &:after {
+        @include menu-underline-pseudoelement($font_color_blue);
+      }
+    }
+  }
+}
+
+// #endregion Top Menu

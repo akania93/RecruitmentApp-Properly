@@ -1,0 +1,55 @@
+@import './themes';
+
+@mixin nb-overrides() {
+  a {
+    text-decoration: none;
+  }
+
+  // #region left menu .menu-sidebar
+
+  nb-sidebar.menu-sidebar {
+    background-image: -o-linear-gradient(292deg, $blue_3 1%, $blue_2 97%);
+    background-image: linear-gradient(158deg, $blue_3 1%, $blue_2 97%);
+  }
+
+  nb-sidebar.menu-sidebar {
+    nb-menu .menu-item {
+      a {
+        font-weight: 500;
+      }
+      a.active {
+        background-color: $blue_2;
+      }
+      a:hover {
+        background-color: $blue_2;
+      }
+    }
+
+    nb-menu > .menu-items > .menu-item:last-child {
+      padding-bottom: 1.5rem; // padding last element in menu
+    }
+  }
+
+  // #endregion left menu .menu-sidebar
+
+  // #endregion p-paginator
+
+  // #region Toastr
+
+  nb-toastr-container {
+    margin-top: 90px;
+    margin-right: 10px;
+  }
+
+  nb-toast {
+    margin-bottom: 12px;
+    opacity: 0.9;
+  }
+
+  nb-toast .icon-container {
+    align-self: flex-start;
+    margin-right: 10px;
+  }
+
+  // #endregion Toastr
+}

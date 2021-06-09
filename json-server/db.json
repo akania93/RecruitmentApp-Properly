@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "roles": [1],
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "name": "Jan Kowalski",
+      "type": "person",
+      "nip": "3949361903",
+      "pesel": "16241678193",
+      "email": "1@gmail.com",
+      "phone": "123123123",
+      "city": "Rzeszów",
+      "street": "Lwowska",
+      "zip": "00-000",
+      "houseNo": "1",
+      "apartmentNo": "12",
+      "country": "Poland",
+      "language": "PL",
+      "bic": "20150014031175738122193912",
+      "bankAccount": "20150014031175738122193912",
+      "picture": "http://localhost:3000/users/1/photo"
+    },
+    {
+      "id": 2,
+      "roles": [2, 3],
+      "firstName": "John",
+      "lastName": "Doe",
+      "name": "John Doe",
+      "type": "firm",
+      "nip": "1233054667",
+      "pesel": "74042883501",
+      "email": "2@gmail.com",
+      "phone": "321321321",
+      "city": "Geneva",
+      "street": "Lion",
+      "zip": "01000",
+      "houseNo": "2",
+      "apartmentNo": "22",
+      "country": "England",
+      "language": "ENG",
+      "bic": "20150014031175738122193912",
+      "bankAccount": "20150014031175738122193912"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "admin"
+    },
+    {
+      "id": 2,
+      "name": "user"
+    },
+    {
+      "id": 3,
+      "name": "partner"
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "questionId": 1,
+      "title": "Jeden",
+      "body": "<p>ciało test</p>",
+      "lang": "pl"
+    },
+    {
+      "id": 2,
+      "questionId": 1,
+      "title": "one",
+      "body": "<p>body test</p>",
+      "lang": "en"
+    },
+    {
+      "id": 3,
+      "questionId": 2,
+      "title": "Dwa bez angielskiego",
+      "body": "<p>ciało</p>",
+      "lang": "pl"
+    }
+  ]
+}

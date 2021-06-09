@@ -1,0 +1,59 @@
+{
+  "_global": {
+    "cancel": "Cancel",
+    "error": "Error",
+    "save": "Save"
+  },
+  "formFields": {
+    "accoutNoIban": "Account number (IBAN)",
+    "accoutType": "Account type",
+    "apartNo": "Apartment no",
+    "bic": "BIC(SWIFT) code",
+    "city": "City",
+    "country": "Country",
+    "email": "Email",
+    "fName": "First name",
+    "houseNo": "House no",
+    "lName": "Surname",
+    "language": "Language",
+    "nip": "NIP",
+    "password": "Password",
+    "personType": {
+      "firm": "Firm",
+      "person": "Person"
+    },
+    "pesel": "Pesel",
+    "phone": "Phone",
+    "repeatPassword": "Repeat password",
+    "save": "Save",
+    "street": "Street",
+    "zipCode": "Zip code"
+  },
+  "t-language": {
+    "en": "English",
+    "pl": "Polish"
+  },
+  "t_login": {
+    "LogIn": "Log In",
+    "dontHaveAccount": "Don't have an account?",
+    "forgotPassword": "Forgot Password",
+    "loginErrorMessage": "Login/Email combination is not correct, please try again",
+    "loginInfo": "Hello! Log in with your email",
+    "register": "Register",
+    "rememberMe": "Remember me"
+  },
+  "t_user-password-change": {
+    "changePassword": "Change password",
+    "newPassword": "New Password",
+    "oldPassword": "Old password",
+    "repeatNewPassword": "Repeat new password"
+  },
+  "t_user-profile": {
+    "editProfile": "Edit profile",
+    "nameOrCompanyName": "Name / Company name",
+    "toast": {
+      "userUpdated": "User profile updated",
+      "userUpdatedError": "Profile update error"
+    }
+  }
+}

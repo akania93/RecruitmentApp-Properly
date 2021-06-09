@@ -1,0 +1,96 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+// material themes
+@import './material/material-light';
+@import './material/properly';
+
+@import 'colors.scss';
+
+$nb-themes: nb-register-theme(
+  (
+    menu-item-icon-margin: 0 0.5rem 0 0,
+    card-height-tiny: 13.5rem,
+    card-height-small: 21.1875rem,
+    card-height-medium: 28.875rem,
+    card-height-large: 36.5625rem,
+    card-height-giant: 44.25rem,
+    card-margin-bottom: 1.875rem,
+    card-header-with-select-padding-top: 0.5rem,
+    card-header-with-select-padding-bottom: 0.5rem,
+    select-min-width: 6rem,
+    option-list-border-radius: 0,
+    slide-out-background: linear-gradient(270deg, #e0e0e0 0%, #ebebeb 100%),
+    slide-out-shadow-color: 0 4px 14px 0 #ebebeb,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #ebebeb,
+  ),
+  material-light,
+  material-light
+);
+
+// Default Theme variables: https://akveo.github.io/nebular/docs/design-system/default-theme
+// Nebular Typography: https://akveo.github.io/nebular/docs/design-system/typography#nebular-typography
+// Eva Design System Theme: https://akveo.github.io/nebular/docs/design-system/design-system-theme#eva-design-system-theme
+// Eva Design Palette: https://colors.eva.design/
+
+/*
+  Można tworzyć swoje
+  layout-padding-top: 2.25rem,
+  i potem:
+  padding-top: nb-theme(layout-padding-top);
+*/
+// To jest kolejny Override bo podstawowe wartości są w pliku _properly.scss
+$nb-themes: nb-register-theme(
+  (
+    sidebar-width: 260px,
+    sidebar-scrollbar-color: lighten($color_gray_light_4, 30),
+    menu-text-color: #fff,
+    menu-group-text-color: #fff,
+    menu-submenu-padding: 0 1rem,
+    menu-item-divider-width: 0,
+    menu-item-active-text-color: #fff,
+    menu-item-icon-color: #fff,
+    menu-item-icon-hover-color: #fff,
+    menu-submenu-item-icon-hover-color: #fff,
+    menu-submenu-item-icon-active-color: #fff,
+    menu-submenu-item-icon-active-hover-color: #fff,
+    menu-submenu-item-active-hover-text-color: #fff,
+    menu-item-hover-background-color: $hover_color,
+    menu-item-hover-text-color: #fff,
+    menu-submenu-item-hover-background-color: $hover_color,
+    menu-submenu-item-hover-text-color: #fff,
+    menu-submenu-item-active-background-color: $color_primary,
+    menu-submenu-margin: 0.05rem,
+    menu-text-font-size: 0.8125rem,
+    primary-filled-background-color: #fff,
+    slide-out-background: $color_primary,
+    slide-out-shadow-color: 0 4px 14px 0 #fff,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #fff,
+    /* text color */ text-basic-color: $font_color_primary,
+    text-alternate-color: $font_color_secondary,
+    text-disabled-color: $font_color_disabled,
+    text-paragraph-font-size: 0.8125rem,
+    text-paragraph-font-weight: 500,
+    text-heading-6-font-size: 12px,
+    border-radius: 12px,
+    /* TOASTR */ toastr-border-width: 0 0 0 6px,
+    toastr-border-radius: 3px,
+    /* TOASTR success */ toastr-success-background-color: #c8e6c9,
+    toastr-success-border-color: color-success-500,
+    toastr-success-text-color: #224a23,
+    toastr-icon-success-background-color: transparent,
+    toastr-icon-success-color: #224a23,
+    /* TOASTR danger */ toastr-danger-background-color: color-danger-200,
+    toastr-danger-text-color: #73000c,
+    toastr-icon-danger-background-color: transparent,
+    toastr-icon-danger-color: #73000c,
+    /* TOASTR warning */ toastr-warning-background-color: color-warning-200,
+    toastr-warning-text-color: color-warning-900,
+    toastr-icon-warning-background-color: transparent,
+    toastr-icon-warning-color: color-warning-900,
+  ),
+  properly,
+  properly
+);
+// $nb-themes: nb-register-theme($themeProperly, properly, default);

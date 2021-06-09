@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+// themes - our custom or/and out of the box themes
+@import 'themes';
+
+// framework component themes (styles tied to theme variables)
+@import '~@nebular/theme/styles/globals';
+@import '~@nebular/auth/styles/all';
+
+// #region Bootstrap configuration
+
+/* import what we need to override */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+/* another parts */
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/grid';
+
+/* set the overriding variables without !default operator */
+$grid-gutter-width: 16px;
+
+@import '~bootstrap/scss/bootstrap';
+
+// #endregion Bootstrap configuration
+
+// loading progress bar theme
+@import './pace.theme';
+
+@import './layout';
+@import './overrides';
+@import './material/material-overrides';
+
+// install the framework and custom global styles
+@include nb-install() {
+  // framework global styles
+  @include nb-theme-global();
+  @include nb-auth-global();
+
+  @include ngx-layout();
+  // loading progress bar
+  @include ngx-pace-theme();
+
+  @include nb-overrides();
+  @include material-overrides();
+}
+
+@import './main-styles.scss';

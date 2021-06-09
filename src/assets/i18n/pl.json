@@ -1,0 +1,59 @@
+{
+  "_global": {
+    "cancel": "Anuluj",
+    "error": "Błąd",
+    "save": "Zapisz"
+  },
+  "formFields": {
+    "accoutNoIban": "Numer konta bankowego (IBAN)",
+    "accoutType": "Typ konta",
+    "apartNo": "Nr mieszkania",
+    "bic": "Kod BIC(SWIFT)",
+    "city": "Miasto",
+    "country": "Kraj",
+    "email": "Email",
+    "fName": "Imię",
+    "houseNo": "Nr domu",
+    "lName": "Nazwisko",
+    "language": "Język",
+    "nip": "NIP",
+    "password": "Hasło",
+    "personType": {
+      "firm": "Firma",
+      "person": "Osoba fizyczna"
+    },
+    "pesel": "Pesel",
+    "phone": "Nr telefonu",
+    "repeatPassword": "Powtórz hasło",
+    "save": "Zapisz",
+    "street": "Ulica",
+    "zipCode": "Kod pocztowy"
+  },
+  "t-language": {
+    "en": "Angielski",
+    "pl": "Polski"
+  },
+  "t_login": {
+    "LogIn": "Zaloguj",
+    "dontHaveAccount": "Nie masz konta?",
+    "forgotPassword": "Zapomniałeś hasła",
+    "loginErrorMessage": "Login/Email są nie prawidłowe. Proszę spróbowac jeszcze raz",
+    "loginInfo": "Proszę się zalogować używając email i hasła",
+    "register": "Zarejestruj",
+    "rememberMe": "Zapamiętaj mnie"
+  },
+  "t_user-password-change": {
+    "changePassword": "Zmień hasło",
+    "newPassword": "Nowe hasło",
+    "oldPassword": "Stare hasło",
+    "repeatNewPassword": "Powtórz nowe hasło"
+  },
+  "t_user-profile": {
+    "editProfile": "Edycja profilu",
+    "nameOrCompanyName": "Imię i nazwisko / Nazwa firmy",
+    "toast": {
+      "userUpdated": "Profil zaktualizowany",
+      "userUpdatedError": "Błąd edycji profilu"
+    }
+  }
+}

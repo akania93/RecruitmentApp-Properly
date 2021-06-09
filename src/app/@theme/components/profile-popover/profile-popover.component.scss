@@ -1,0 +1,19 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+@import '../../styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    margin-bottom: 0;
+  }
+
+  table.custom-table tr td {
+    padding-bottom: 8px;
+  }
+
+  table.custom-table > tr > td:first-child {
+    color: var(--gray);
+    font-size: 11px;
+    width: 100px;
+  }
+}

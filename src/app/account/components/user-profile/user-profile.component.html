@@ -1,0 +1,114 @@
+<div class="row mb-3">
+  <h4>{{ 't_user-profile.editProfile' | translate }}</h4>
+</div>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="userForm">
+  <nb-card class="mb-4">
+    <nb-card-header>Zmień dane swojego konta</nb-card-header>
+
+    <nb-card-body>
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.fName' | translate }}</label>
+          <input formControlName="firstName" class="p-inputtext-sm" pInputText />
+        </div>
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.lName' | translate }}</label>
+          <input formControlName="lastName" class="p-inputtext-sm" pInputText />
+        </div>
+      </div>
+
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.accoutType' | translate }}</label>
+          <p-selectButton formControlName="type" [options]="personTypes" optionLabel="name" optionValue="value"></p-selectButton>
+        </div>
+      </div>
+
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.nip' | translate }}</label>
+          <p-inputMask formControlName="nip" mask="9999999999"></p-inputMask>
+        </div>
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.pesel' | translate }}</label>
+          <input formControlName="pesel" pInputText />
+        </div>
+      </div>
+
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.email' | translate }}</label>
+          <input formControlName="email" pInputText />
+          <ng-container *ngIf="c.email.touched && c.email.invalid">
+            <small *ngIf="c.email.errors?.required" class="p-invalid">Wymagane</small><br />
+            <small *ngIf="c.email.errors?.email" class="p-invalid">Niepoprawny email</small>
+          </ng-container>
+        </div>
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.phone' | translate }}</label>
+          <input formControlName="phone" pInputText />
+        </div>
+      </div>
+
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.city' | translate }}</label>
+          <input formControlName="city" pInputText />
+        </div>
+        <div class="p-field p-col-2">
+          <label>{{ 'formFields.zipCode' | translate }}</label>
+          <input formControlName="zip" pInputText />
+        </div>
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.street' | translate }}</label>
+          <input formControlName="street" pInputText />
+        </div>
+      </div>
+
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.houseNo' | translate }}</label>
+          <input formControlName="houseNo" pInputText />
+        </div>
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.apartNo' | translate }}</label>
+          <input formControlName="apartmentNo" pInputText />
+        </div>
+      </div>
+
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.country' | translate }}</label>
+          <input formControlName="country" pInputText />
+        </div>
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.language' | translate }}</label>
+          <input formControlName="language" pInputText />
+        </div>
+      </div>
+
+      <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.bic' | translate }}</label>
+          <input formControlName="bic" pInputText />
+        </div>
+        <div class="p-field p-col-3">
+          <label>{{ 'formFields.accoutNoIban' | translate }}</label>
+          <input formControlName="bankAccount" pInputText />
+        </div>
+      </div>
+    </nb-card-body>
+
+    <nb-card-footer>
+      <button
+        pButton
+        pRipple
+        type="submit"
+        [label]="'_global.save' | translate"
+        class="p-button-raised"
+        [disabled]="userForm.pristine || userForm.invalid"
+      ></button>
+    </nb-card-footer>
+  </nb-card>
+</form>
