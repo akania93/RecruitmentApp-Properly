@@ -4,11 +4,11 @@
 <ol>
 	<li>Pobierz repozytorium</li>
 	<li>Otwórz wiersz poleceń głównym folderze aplikacji</li>
-	<li>Wpisz polecenie <code>npm intall</code>. Aplikacja zostanie zainstalowana.</li>
+	<li>Wpisz polecenie <code>npm install</code>. Aplikacja zostanie zainstalowana.</li>
 	<li>Uruchom backend (json-server). W tym celu otwórz nową konsolę w głównym folderze aplikacji i wpisz polecenie <code>npm run mock</code>. Api odpali się pod adresem <code>http://localhost:3000</code>.</li>
 	<li>Uruchom program. W pierwszej konsoli wpisz polecenie <code>npm start</code>.</li>
 	<li>Otwórz stronę pod adresem <code>http://localhost:4200/</code>.</li>
-	<li>Zaloguj się przyciskiem "Zaloguj - wersja rekrutacyjna</li>
+	<li>Zaloguj się przyciskiem "Zaloguj - wersja rekrutacyjna"</li>
 </ol>
 <h3>Gdzie klikać? :)</h3>
 <p>
