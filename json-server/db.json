@@ -2,7 +2,9 @@
   "users": [
     {
       "id": 1,
-      "roles": [1],
+      "roles": [
+        1
+      ],
       "firstName": "Jan",
       "lastName": "Kowalski",
       "name": "Jan Kowalski",
@@ -24,7 +26,10 @@
     },
     {
       "id": 2,
-      "roles": [2, 3],
+      "roles": [
+        2,
+        3
+      ],
       "firstName": "John",
       "lastName": "Doe",
       "name": "John Doe",
@@ -63,7 +68,7 @@
       "id": 1,
       "questionId": 1,
       "title": "Jeden",
-      "body": "<p>ciało test</p>",
+      "body": "<h2>ciało test</h2><p><span style=\"color: rgb(230, 0, 0);\">na czerwono</span></p><p><br></p>",
       "lang": "pl"
     },
     {

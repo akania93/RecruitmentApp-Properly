@@ -92,7 +92,7 @@ export class NgxLoginComponent extends AuthBaseComponent implements OnInit {
 
   loginToDemonstrativeVersion(): void {
     localStorage.setItem('auth_app_refresh_token', '0oPhkJmr/Ubzi2cdhIXKiZtLeQv8eV18vwYTuXyiKIQ=');
-    let app_token = {
+    const app_token = {
       name: 'nb:auth:jwt:token',
       ownerStrategyName: 'email',
       createdAt: 1623236757718,

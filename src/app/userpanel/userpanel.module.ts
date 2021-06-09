@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { NbMenuModule } from '@nebular/theme';
 import { ThemeModule } from 'app/@theme/theme.module';
+import { SharedModule } from 'app/shared/shared.module';
 import { AccordionModule } from 'primeng/accordion';
-import { SharedModule } from 'primeng/api';
 import { BuyPackageComponent } from './components/buy-package/buy-package.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FaqComponent } from './components/faq/faq.component';

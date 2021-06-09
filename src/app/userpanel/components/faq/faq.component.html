@@ -1,5 +1,5 @@
 <p-accordion>
   <p-accordionTab *ngFor="let faq of FAQ_LIST" [header]="faq.title">
-    <p [innerHTML]="faq.body"></p>
+    <div [innerHtml]="faq.body | safeHtml"></div>
   </p-accordionTab>
 </p-accordion>

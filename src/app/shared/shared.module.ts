@@ -20,6 +20,7 @@ import { TableModule } from 'primeng/table';
 import { Page404dashboardComponent } from './components/404/page404dashboard.component';
 import { NgxFilterByNumberComponent } from './components/custom-smart-table-components/filter-by-number/filter-by-number.component';
 import { NgxValidationMessageComponent } from './components/validation-message/validation-message.component';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -38,9 +39,10 @@ const PRIMENG_MODULES = [
   SelectButtonModule,
 ];
 const COMPONENTS = [NgxValidationMessageComponent, NgxFilterByNumberComponent, Page404dashboardComponent];
+const PIPES = [SafeHtmlPipe];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...PIPES, ...COMPONENTS],
   imports: [
     CommonModule,
     RouterModule,
@@ -56,7 +58,7 @@ const COMPONENTS = [NgxValidationMessageComponent, NgxFilterByNumberComponent, P
       },
     }),
   ],
-  exports: [...MODULES, ...COMPONENTS, ...NEBULAR_MODULES, ...PRIMENG_MODULES, TranslateModule],
+  exports: [...MODULES, ...PIPES, ...COMPONENTS, ...NEBULAR_MODULES, ...PRIMENG_MODULES, TranslateModule],
   providers: [FAQApi],
 })
 export class SharedModule {}
