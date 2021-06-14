@@ -15,8 +15,8 @@
 	Po zalogowaniu zostaniesz przeniesiony do panelu admina >> CMS >> FAQ gdzie można dodawać nowe pytania FAQ. Następnie możesz je wyświetlić po stronie usera.
 	Jeśli klikniesz w trybik w headerze możesz zobaczyć formularz edycji usera oraz zmiany hasła.
 </p>
-<img src="https://iv.pl/images/fc0aa32f4a281f192b3e24d4190b3370.png">
-<img src="https://iv.pl/images/0be517bef97bf83bdc89fdcea3cd3008.png">
+<img src="https://iv.pl/images/aeb9d859ce294b06d07cb3f50717ee15.png">
+<img src="https://iv.pl/images/d6682cfb0316c53048703eb96316a15b.png">
 <h3>Co wykorzystuje aplikacja i jakie umiejętności można z niej wyczytać?</h3>
 <ul>
 	<li>routing aplikacji z podziałem na moduły ładowane leniwie (lazy loading)</li>
